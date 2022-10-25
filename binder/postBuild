@@ -6,13 +6,12 @@ mkdir -p $HOME/openrefine
 
 mkdir -p $HOME/.jupyter/
 
-OR_VERSION=3.5.2
+OR_VERSION=3.6.2
 
-wget -q -O openrefine-${OR_VERSION}.tar.gz https://github.com/OpenRefine/OpenRefine/releases/download/${OR_VERSION}/openrefine-linux-${OR_VERSION}.tar.gz
+wget -q -O openrefine-${OR_VERSION}.tar.gz https://github.com/OpenRefine/OpenRefine/archive/refs/tags/${OR_VERSION}.tar.gz
 
 tar xzf openrefine-${OR_VERSION}.tar.gz -C $HOME/.openrefine
 rm openrefine-${OR_VERSION}.tar.gz
-
 
 
 #Although located in binder/,
